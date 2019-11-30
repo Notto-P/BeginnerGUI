@@ -1,0 +1,14 @@
+D:\Dev\Arraylistapp\Arraylistapp\bin\Debug\Arraylistapp.exe.config
+D:\Dev\Arraylistapp\Arraylistapp\bin\Debug\Arraylistapp.exe
+D:\Dev\Arraylistapp\Arraylistapp\bin\Debug\Arraylistapp.pdb
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.csprojAssemblyReference.cache
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\MainWindow.g.cs
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\App.g.cs
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp_MarkupCompile.cache
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp_MarkupCompile.lref
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\MainWindow.baml
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.g.resources
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.Properties.Resources.resources
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.csproj.GenerateResource.cache
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.exe
+D:\Dev\Arraylistapp\Arraylistapp\obj\Debug\Arraylistapp.pdb
