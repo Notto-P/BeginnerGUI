@@ -1,0 +1,69 @@
+﻿
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               รหัสลูกค้า
+            </th>
+            <th>
+                ชื่อลูกค้า
+            </th>
+            <th>
+                ที่่อยู่
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.AllCustomer)
+        {
+            <tr>
+                <td>
+                    @item.CustomerID
+                </td>
+                <td>
+                    @item.FullName
+                </td>
+                <td>
+                    @item.Address
+                </td>
+            </tr>
+        }
+    </tbody>
+
+    </table>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                รหัสสินค้า
+            </th>
+            <th>
+                ชื่อสินค้า
+            </th>
+            <th>
+                ราคาสินค้า
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.AllProduct)
+        {
+            <tr>
+                <td>
+                    @item.ProductID
+                </td>
+                <td>
+                    @item.ProductName
+                </td>
+                <td>
+                    @item.ProductPrice
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
