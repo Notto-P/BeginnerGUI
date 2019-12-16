@@ -1,0 +1,32 @@
+﻿@model Webpayment.Models.db.Product
+
+@{
+    ViewData["Title"] = "รายละเอียดสินค้า";
+}
+
+    <h1>รายละเอียดสินค้า</h1>
+
+<div>
+    <hr />
+    <div class="card col-md-6 border-success">
+        <img src="@Url.Content(Model.Image)" class="card-img-top" alt="" style="max-width: 250px;">
+        <div class="card-body">
+            <h2 class="card-title">
+                @Html.DisplayFor(model => model.IdProduct):
+                @Html.DisplayFor(model => model.ProductName)
+            </h2>
+        </div>
+        <div class="card-text">
+            ราคาสินค้า : @Html.DisplayFor(model => model.Price)
+
+        </div>
+        <div class="card-text">
+            จำนวนสินค้าที่มี : @Html.DisplayFor(model => model.Unit)
+
+        </div><hr />
+        <div class="card-footer">
+            <a asp-action="Edit" asp-route-id="@Model.IdProduct" class="btn btn-outline-info">Edit</a> |
+            <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
+        </div>
+    </div>
+</div>

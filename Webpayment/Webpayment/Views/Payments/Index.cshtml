@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Webpayment.Models.db.Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProduct)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Totalprice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Totalprice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPay">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPay">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPay">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
